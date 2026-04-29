@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  # List packages installed in system profile. 
+  # Only essential packages should be installed system-wide
   environment.systemPackages = [
     pkgs.vim
     pkgs.git
@@ -11,9 +11,7 @@
   users.users.rshirts.name = "rshirts";
   users.users.rshirts.home = "/Users/rshirts";
 
-
   programs.zsh.enable = true; 
-  programs.zsh.enableAutosuggestions = true;
 
   # power.sleep.allowSleepByPowerButton = null;
   power.sleep.computer = 20;

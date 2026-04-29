@@ -6,6 +6,20 @@
     pkgs.httpie
   ];
 
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    shellAliases = {
+      rebuild = "sudo darwin-rebuilt switch --flake ~/.config/nix-darwin#Robbies-Macbook-Pro";
+      ls = "ls -a";
+    };
+    history = {
+      append = true;
+      extended = true;
+      ignoreAllDups = true;
+    };
+  };
+
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
