@@ -2,8 +2,9 @@
   home.username = "rshirts";
 
   home.packages = [
-    pkgs.ripgrep
     pkgs.httpie
+    pkgs.ripgrep
+    pkgs.zoxide
   ];
 
   programs.zsh = {
@@ -20,6 +21,11 @@
     };
   };
 
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+    options = [ "--cmd cd" ];
+  };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
