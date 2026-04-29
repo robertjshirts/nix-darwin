@@ -8,6 +8,8 @@
   # homebrew.enable = true;
   # homebrew.enableZshIntegration = true;
 
+  user.users.rshirts.name = "rshirts";
+
 
   programs.zsh.enable = true; 
   programs.zsh.enableAutosuggestions = true;
