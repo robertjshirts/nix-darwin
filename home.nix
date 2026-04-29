@@ -12,7 +12,7 @@
     enable = true;
     enableCompletion = true;
     shellAliases = {
-      rebuild = "sudo darwin-rebuild switch --flake ~/.config/nix-darwin#Robbies-MacBook-Pro";
+      rebuild = "sudo darwin-rebuild switch --flake ~/.config/nix-darwin#Robbies-MacBook-Pro && exec zsh";
       ls = "ls -a";
     };
     history = {
