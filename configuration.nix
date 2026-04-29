@@ -41,6 +41,11 @@
       NewWindowTarget = "Home";
       _FXSortFoldersFirst = true;
     };
+    screencapture = {
+      location = "~/Pictures/captures";
+      target = "clipboard";
+      type = "jpg";
+    };
     controlcenter = {
       Bluetooth = true;
     };
