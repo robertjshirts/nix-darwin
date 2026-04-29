@@ -18,7 +18,7 @@
   user.users.rshirts = {
     name = "rshirts";
     home = "/Users/rshirts";
-  }
+  };
 
   # Set Git commit hash for darwin-version.
   # system.configurationRevision = self.rev or self.dirtyRev or null;
