@@ -1,8 +1,5 @@
-{ config, pkgs, ... }:
-
-{
+{ config, pkgs, ... }: {
   home.username = "rshirts";
-  home.homeDirectory = "/Users/rshirts";
 
   home.packages = [
     pkgs.ripgrep
