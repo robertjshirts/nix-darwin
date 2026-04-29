@@ -4,6 +4,7 @@
   home.packages = [
     pkgs.httpie
     pkgs.ripgrep
+    pkgs.starship
     pkgs.zoxide
   ];
 
@@ -25,6 +26,12 @@
     enable = true;
     enableZshIntegration = true;
     options = [ "--cmd cd" ];
+  };
+
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+    # presets = [ "nerd-font-symbols" ];
   };
 
   # This value determines the Home Manager release that your
