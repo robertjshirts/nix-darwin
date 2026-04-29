@@ -3,6 +3,7 @@
 
   home.packages = [
     pkgs.ripgrep
+    pkgs.httpie
   ];
 
 

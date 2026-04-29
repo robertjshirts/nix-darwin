@@ -8,7 +8,8 @@
   # homebrew.enable = true;
   # homebrew.enableZshIntegration = true;
 
-  user.users.rshirts.name = "rshirts";
+  users.users.rshirts.name = "rshirts";
+  users.users.rshirts.home = "/Users/rshirts";
 
 
   programs.zsh.enable = true; 
