@@ -34,7 +34,7 @@
       NSAutomaticSpellingCorrectionEnabled = false;
     };
     controlcenter = {
-      Bluetooth = 18;
+      Bluetooth = true;
     };
     dock = {
       autohide = true;
