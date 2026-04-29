@@ -28,7 +28,7 @@
       AppleShowAllFiles = true;
       NSAutomaticCapitalizationEnabled = false;
       NSAutomaticDashSubstitutionEnabled = false;
-      NSAutomaticPredictionEnabled = false;
+      NSAutomaticInlinePredictionEnabled = false;
       NSAutomaticPeriodSubstitutionEnabled = false;
       NSAutomaticQuoteSubstitutionEnabled = false;
       NSAutomaticSpellingCorrectionEnabled = false;
