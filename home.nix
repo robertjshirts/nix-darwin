@@ -22,6 +22,15 @@
     };
   };
 
+  programs.git = {
+    enable = true;
+    settings = {
+      init.defaultbranch = "main";
+      user.name = "Robert Shirts";
+      user.email = "robertjshirts@gmail.com";
+    };
+  };
+
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
