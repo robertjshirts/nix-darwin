@@ -16,6 +16,7 @@
   # power.sleep.allowSleepByPowerButton = null;
   power.sleep.computer = 20;
 
+  system.primaryUser = "rshirts";
   system.defaults = {
     NSGlobalDomain = {
       AppleICUForce24HourTime = false;
