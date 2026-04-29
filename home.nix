@@ -2,6 +2,7 @@
   home.username = "rshirts";
 
   home.packages = [
+    pkgs.ghostty
     pkgs.httpie
     pkgs.ripgrep
     pkgs.starship
@@ -35,6 +36,11 @@
     enable = true;
     enableZshIntegration = true;
     options = [ "--cmd cd" ];
+  };
+
+  programs.dircolors = {
+    enable = true;
+    enableZshIntegration = true;
   };
 
   programs.starship = {
