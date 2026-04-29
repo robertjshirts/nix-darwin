@@ -34,6 +34,13 @@
       NSAutomaticQuoteSubstitutionEnabled = false;
       NSAutomaticSpellingCorrectionEnabled = false;
     };
+    finder = {
+      AppleShowAllExtensions = true;
+      AppleShowAllFiles = true;
+      FXPreferredViewStyle = "Nlsv";
+      NewWindowTarget = "Home";
+      _FXSortFoldersFirst = true;
+    };
     controlcenter = {
       Bluetooth = true;
     };
