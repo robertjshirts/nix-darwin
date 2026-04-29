@@ -2,7 +2,7 @@
   home.username = "rshirts";
 
   home.packages = [
-    pkgs.ghostty
+    pkgs.ghostty-bin
     pkgs.httpie
     pkgs.ripgrep
     pkgs.starship
