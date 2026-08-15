@@ -14,7 +14,10 @@
 
     casks = [
       "codex"
+      "discord"
     ];
+
+    greedyCasks = true;
 
     onActivation = {
       autoUpdate = true;
