@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   # Only essential packages should be installed system-wide
   environment.systemPackages = [
-    pkgs.vim
+    pkgs.neovim
     pkgs.git
   ];
 

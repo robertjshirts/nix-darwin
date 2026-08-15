@@ -14,6 +14,7 @@
     enableCompletion = true;
     shellAliases = {
       rebuild = "sudo darwin-rebuild switch --flake ~/.config/nix-darwin#Robbies-MacBook-Pro && exec zsh";
+      vim = "nvim";
       ls = "ls -a";
     };
     history = {
