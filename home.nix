@@ -9,6 +9,7 @@
     pkgs.starship
     pkgs.zoxide
     pkgs.discord
+    pkgs.codex
   ];
 
   programs.zsh = {
