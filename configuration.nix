@@ -5,8 +5,19 @@
     pkgs.git
   ];
 
-  # homebrew.enable = true;
-  # homebrew.enableZshIntegration = true;
+  homebrew = {
+    enable = true;
+    enableZshIntegration = true;
+
+    brews = [
+      "codex"
+    ];
+
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+    };
+  }; 
 
   users.users.rshirts.name = "rshirts";
   users.users.rshirts.home = "/Users/rshirts";
