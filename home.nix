@@ -7,7 +7,6 @@
     pkgs.ripgrep
     pkgs.starship
     pkgs.zoxide
-    pkgs.tmux
   ];
 
   programs.zsh = {

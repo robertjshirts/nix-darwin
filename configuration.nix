@@ -10,6 +10,7 @@
     enableZshIntegration = true;
 
     brews = [
+      "tmux"
     ];
 
     casks = [
