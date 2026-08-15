@@ -1,8 +1,6 @@
 { config, pkgs, ... }: {
   home.username = "rshirts";
 
-  nixpkgs.config.allowUnfree = true;
-
   home.packages = [
     pkgs.ghostty-bin
     pkgs.httpie
