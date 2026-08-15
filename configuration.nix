@@ -10,6 +10,9 @@
     enableZshIntegration = true;
 
     brews = [
+    ];
+
+    casks = [
       "codex"
     ];
 
