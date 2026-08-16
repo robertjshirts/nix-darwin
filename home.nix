@@ -1,20 +1,10 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 let
-  sfMonoNerdFontFiles = [
-    "SFMonoNerdFont-Bold.otf"
-    "SFMonoNerdFont-BoldItalic.otf"
-    "SFMonoNerdFont-Heavy.otf"
-    "SFMonoNerdFont-HeavyItalic.otf"
-    "SFMonoNerdFont-Italic.otf"
-    "SFMonoNerdFont-Light.otf"
-    "SFMonoNerdFont-LightItalic.otf"
-    "SFMonoNerdFont-Medium.otf"
-    "SFMonoNerdFont-MediumItalic.otf"
-    "SFMonoNerdFont-Regular.otf"
-    "SFMonoNerdFont-SemiBold.otf"
-    "SFMonoNerdFont-SemiBoldItalic.otf"
-  ];
+  sfMonoNerdFont = pkgs.runCommand "sfmono-nerd-font-3.4.0" { } ''
+    mkdir -p "$out/share/fonts/opentype"
+    cp ${./dotfiles/fonts/SFMonoNerdFont}/*.otf "$out/share/fonts/opentype/"
+  '';
 in
 {
   home.username = "rshirts";
@@ -25,21 +15,14 @@ in
     pkgs.ripgrep
     pkgs.starship
     pkgs.zoxide
+    sfMonoNerdFont
   ];
 
   xdg.configFile."ghostty/config.ghostty".source =
     ./dotfiles/ghostty/config.ghostty;
   xdg.configFile."starship.toml".source = ./dotfiles/starship.toml;
 
-  home.file =
-    {
-      ".tmux.conf".source = ./dotfiles/tmux/tmux.conf;
-    }
-    // builtins.listToAttrs (map (fontFile: {
-      name = "Library/Fonts/HomeManager/${fontFile}";
-      value.source = config.lib.file.mkOutOfStoreSymlink
-        "${config.home.homeDirectory}/.config/nix-darwin/dotfiles/fonts/SFMonoNerdFont/${fontFile}";
-    }) sfMonoNerdFontFiles);
+  home.file.".tmux.conf".source = ./dotfiles/tmux/tmux.conf;
 
   programs.zsh = {
     enable = true;
