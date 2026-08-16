@@ -9,6 +9,12 @@
     pkgs.zoxide
   ];
 
+  xdg.configFile."ghostty/config.ghostty".text = ''
+    font-feature = -calt, -liga, -dlig
+  '';
+
+  home.file.".tmux.conf".source = ./dotfiles/tmux/tmux.conf;
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
