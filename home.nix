@@ -2,6 +2,7 @@
   home.username = "rshirts";
 
   home.packages = [
+    pkgs.gh
     pkgs.ghostty-bin
     pkgs.httpie
     pkgs.nodejs
