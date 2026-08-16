@@ -9,9 +9,8 @@
     pkgs.zoxide
   ];
 
-  xdg.configFile."ghostty/config.ghostty".text = ''
-    font-feature = -calt, -liga, -dlig
-  '';
+  xdg.configFile."ghostty/config.ghostty".source =
+    ./dotfiles/ghostty/config.ghostty;
 
   home.file.".tmux.conf".source = ./dotfiles/tmux/tmux.conf;
 

@@ -1,0 +1,4 @@
+macos-option-as-alt = true
+font-family = ""
+font-family = "SFMono Nerd Font"
+font-feature = -calt, -liga, -dlig
