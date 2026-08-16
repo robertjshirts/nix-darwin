@@ -1,4 +1,22 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:
+
+let
+  sfMonoNerdFontFiles = [
+    "SFMonoNerdFont-Bold.otf"
+    "SFMonoNerdFont-BoldItalic.otf"
+    "SFMonoNerdFont-Heavy.otf"
+    "SFMonoNerdFont-HeavyItalic.otf"
+    "SFMonoNerdFont-Italic.otf"
+    "SFMonoNerdFont-Light.otf"
+    "SFMonoNerdFont-LightItalic.otf"
+    "SFMonoNerdFont-Medium.otf"
+    "SFMonoNerdFont-MediumItalic.otf"
+    "SFMonoNerdFont-Regular.otf"
+    "SFMonoNerdFont-SemiBold.otf"
+    "SFMonoNerdFont-SemiBoldItalic.otf"
+  ];
+in
+{
   home.username = "rshirts";
 
   home.packages = [
@@ -13,7 +31,15 @@
     ./dotfiles/ghostty/config.ghostty;
   xdg.configFile."starship.toml".source = ./dotfiles/starship.toml;
 
-  home.file.".tmux.conf".source = ./dotfiles/tmux/tmux.conf;
+  home.file =
+    {
+      ".tmux.conf".source = ./dotfiles/tmux/tmux.conf;
+    }
+    // builtins.listToAttrs (map (fontFile: {
+      name = "Library/Fonts/HomeManager/${fontFile}";
+      value.source = config.lib.file.mkOutOfStoreSymlink
+        "${config.home.homeDirectory}/.config/nix-darwin/dotfiles/fonts/SFMonoNerdFont/${fontFile}";
+    }) sfMonoNerdFontFiles);
 
   programs.zsh = {
     enable = true;
