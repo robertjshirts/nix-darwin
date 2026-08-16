@@ -20,6 +20,16 @@
     enable = true;
     enableCompletion = true;
     shellAliases = {
+      gaa = "git add --all";
+      gap = "git add --patch";
+      gcm = "git commit --message";
+      gd = "git diff";
+      gdc = "git diff --cached";
+      gp = "git push";
+      gpf = "git push --force-with-lease --force-if-includes";
+      gpl = "git pull";
+      gs = "git status";
+      gsw = "git switch";
       rebuild = "sudo darwin-rebuild switch --flake ~/.config/nix-darwin#Robbies-MacBook-Pro && exec zsh";
       vim = "nvim";
       ls = "ls -a";
