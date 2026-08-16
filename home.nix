@@ -11,6 +11,7 @@
 
   xdg.configFile."ghostty/config.ghostty".source =
     ./dotfiles/ghostty/config.ghostty;
+  xdg.configFile."starship.toml".source = ./dotfiles/starship.toml;
 
   home.file.".tmux.conf".source = ./dotfiles/tmux/tmux.conf;
 
