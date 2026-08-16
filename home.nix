@@ -12,6 +12,7 @@ in
   home.packages = [
     pkgs.ghostty-bin
     pkgs.httpie
+    pkgs.nodejs
     pkgs.ripgrep
     pkgs.starship
     pkgs.zoxide
