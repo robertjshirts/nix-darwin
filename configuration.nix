@@ -26,6 +26,7 @@ in
     ];
 
     casks = [
+      "bruno"
       "codex"
       "discord"
       "raycast"
