@@ -26,6 +26,7 @@ in
     ];
 
     casks = [
+      "1password"
       "bruno"
       "codex"
       "discord"
