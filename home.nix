@@ -45,6 +45,12 @@
     options = [ "--cmd cd" ];
   };
 
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
+  };
+
   programs.dircolors = {
     enable = true;
     enableZshIntegration = true;
