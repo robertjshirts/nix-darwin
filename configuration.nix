@@ -1,8 +1,20 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+
+let
+  sfMonoNerdFont = pkgs.runCommand "sfmono-nerd-font-3.4.0" { } ''
+    mkdir -p "$out/share/fonts/opentype"
+    cp ${./dotfiles/fonts/SFMonoNerdFont}/*.otf "$out/share/fonts/opentype/"
+  '';
+in
+{
   # Only essential packages should be installed system-wide
   environment.systemPackages = [
     pkgs.neovim
     pkgs.git
+  ];
+
+  fonts.packages = [
+    sfMonoNerdFont
   ];
 
   homebrew = {

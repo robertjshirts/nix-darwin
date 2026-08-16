@@ -1,12 +1,4 @@
-{ pkgs, ... }:
-
-let
-  sfMonoNerdFont = pkgs.runCommand "sfmono-nerd-font-3.4.0" { } ''
-    mkdir -p "$out/share/fonts/opentype"
-    cp ${./dotfiles/fonts/SFMonoNerdFont}/*.otf "$out/share/fonts/opentype/"
-  '';
-in
-{
+{ pkgs, ... }: {
   home.username = "rshirts";
 
   home.packages = [
@@ -16,7 +8,6 @@ in
     pkgs.ripgrep
     pkgs.starship
     pkgs.zoxide
-    sfMonoNerdFont
   ];
 
   xdg.configFile."ghostty/config.ghostty".source =
