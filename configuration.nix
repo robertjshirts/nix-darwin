@@ -43,6 +43,11 @@ in
 
   programs.zsh.enable = true; 
 
+  security.pam.services.sudo_local = {
+    touchIdAuth = true;
+    reattach = true;
+  };
+
   # power.sleep.allowSleepByPowerButton = null;
   power.sleep.computer = 20;
 
