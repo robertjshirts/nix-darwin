@@ -28,6 +28,7 @@ in
     casks = [
       "codex"
       "discord"
+      "zen"
     ];
 
     greedyCasks = true;
