@@ -31,6 +31,7 @@ in
       "codex"
       "discord"
       "raycast"
+      "visual-studio-code"
       "zen"
     ];
 
