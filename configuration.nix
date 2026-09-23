@@ -30,6 +30,7 @@ in
       "bruno"
       "codex"
       "discord"
+      "iina"
       "raycast"
       "visual-studio-code"
       "zen"
