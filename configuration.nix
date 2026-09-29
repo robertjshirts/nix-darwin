@@ -32,6 +32,7 @@ in
       "discord"
       "iina"
       "raycast"
+      "rectangle"
       "visual-studio-code"
       "zen"
     ];
