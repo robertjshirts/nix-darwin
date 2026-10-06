@@ -27,6 +27,7 @@ in
 
     casks = [
       "1password"
+      "antigravity-cli"
       "bruno"
       "codex"
       "discord"
