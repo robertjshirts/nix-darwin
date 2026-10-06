@@ -29,6 +29,7 @@ in
       "1password"
       "antigravity-cli"
       "bruno"
+      "claude-code"
       "codex"
       "discord"
       "iina"
