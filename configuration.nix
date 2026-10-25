@@ -22,7 +22,9 @@ in
     enableZshIntegration = true;
 
     brews = [
+      "nasm"
       "tmux"
+      "yt-dlp"
     ];
 
     casks = [
