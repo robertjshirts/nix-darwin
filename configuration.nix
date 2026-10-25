@@ -23,6 +23,7 @@ in
 
     brews = [
       "nasm"
+      "pkgconf"
       "tmux"
       "yt-dlp"
     ];
@@ -34,6 +35,7 @@ in
       "claude-code"
       "codex"
       "discord"
+      "mullvad-vpn"
       "iina"
       "raycast"
       "rectangle"
