@@ -150,6 +150,7 @@ symbol = " "
 
 [gcloud]
 symbol = " "
+format = 'on [$symbol$account(\($region\))]($style) '
 
 [git_branch]
 symbol = " "
